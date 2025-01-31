@@ -1,5 +1,6 @@
 from src.alias import JsonFileName
 from typing import Union, IO
+import dotenv
 import json
 
 class QuizFileHandler:
@@ -35,3 +36,13 @@ class QuizFileHandler:
             dict: The JSON file as a dictionary.
         """
         return json.load(self.json_file)
+
+
+def get_discord_token(env_filepath: str = 'data/.env') -> str:
+    """Loads the Discord bot token from a .env file.
+
+    Returns:
+        str: The Discord bot token.
+    """
+    dotenv.load_dotenv(dotenv_path=env_filepath)
+    return dotenv.dotenv_values()['DISCORD_BOT_TOKEN']
