@@ -1,0 +1,14 @@
+{
+    "quiz": [
+        {
+            "question": "What symbol is used for inline comments in Python?",
+            "options": {
+                "A": "//",
+                "B": "#",
+                "C": "--",
+                "D": "None of the above"
+            },
+            "answer": "B"
+        }
+    ]
+}

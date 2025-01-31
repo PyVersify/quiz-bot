@@ -1,0 +1,9 @@
+{
+    "quizzes": [
+        {
+            "title": "Example Quiz",
+            "id": "example-quiz",
+            "description": "This is an example quiz."
+        }
+    ]
+}
