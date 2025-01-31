@@ -169,3 +169,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# ignore dotenv file from any directory
+**/*.env
+
+# allow the example dotenv file
+!data/example.env
